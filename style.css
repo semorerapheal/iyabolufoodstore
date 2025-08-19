@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #fff7ed; /* warm cream */
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #14532d; /* dark green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: url('zot.png') no-repeat center center/cover;
+    color: white;
+    background-color: rgba(20, 83, 45, 0.85); /* dark overlay */
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+
+  .btn-order {
+    background: #f79605; /* orange */
+    color: white;
+  }
+
+  .btn-order:hover {
+    background: #e68900;
+  }
+
+  .btn-whatsapp {
+    background: #25D366;
+    color: white;
+  }
+
+  .btn-whatsapp:hover {
+    background: #1ebc57;
+  }
+
+  .about, .products, .why, .contact, .testimonials {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .products ul, .why ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .products li, .why li {
+    background: #fff;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  }
+
+  /* Testimonials styling */
+  .testimonials .card {
+    background: #fff;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 500px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+    font-style: italic;
+  }
+
+  .testimonials .card strong {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #14532d; /* dark green accent */
+  }
+
+  footer {
+    background: #14532d; /* dark green */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  /* -------- Mobile Friendly Styles -------- */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.95rem;
+    }
+
+    .hero .btn {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      padding: 14px;
+    }
+
+    .products li, .why li, .testimonials .card {
+      width: 95%;
+    }
+  }
